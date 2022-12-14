@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Damped Simple Harmonic Motion"
+run/main_scene="res://main.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=500
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+limits/buffers/canvas_polygon_buffer_size_kb=8000
+limits/buffers/canvas_polygon_index_buffer_size_kb=8000
+limits/buffers/immediate_buffer_size_kb=16000
+environment/default_clear_color=Color( 0.0666667, 0.0666667, 0.0705882, 1 )
+environment/default_environment="res://default_env.tres"
